@@ -207,8 +207,8 @@ function onRpcConnectionVerified(getnetworkinfo, getblockchaininfo) {
 	var services = getnetworkinfo.localservicesnames ? ("[" + getnetworkinfo.localservicesnames.join(", ") + "]") : getnetworkinfo.localservices;
 
 	global.getnetworkinfo = getnetworkinfo;
-
-	var bitcoinCoreVersionRegex = /^.*\/Satoshi\:(.*)\/.*$/;
+	console.log(global.coinConfig.versionBaseName);
+	var bitcoinCoreVersionRegex = new RegExp("^.*\/" + global.coinConfig.versionBaseName + "\:(.*)\/.*$");
 
 	var match = bitcoinCoreVersionRegex.exec(getnetworkinfo.subversion);
 	if (match) {

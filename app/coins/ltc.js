@@ -43,6 +43,7 @@ var currencyUnits = [
 
 module.exports = {
 	name:"Litecoin",
+	versionBaseName:"LitecoinCore",
 	ticker:"LTC",
 	logoUrl:"/img/logo/ltc.svg",
 	siteTitle:"Litecoin Explorer",

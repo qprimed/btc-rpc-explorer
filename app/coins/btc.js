@@ -51,6 +51,7 @@ var currencyUnits = [
 
 module.exports = {
 	name:"Bitcoin",
+	versionBaseName:"Satoshi",
 	ticker:"BTC",
 	logoUrlsByNetwork:{
 		"main":"/img/logo/btc.svg",
